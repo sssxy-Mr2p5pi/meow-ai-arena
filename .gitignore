@@ -1,4 +1,31 @@
-# 运行时生成的文件（各集通用）
+# ============================================================
+# 本分支（boomerang）仅保留回旋镖大作战相关内容，忽略仓库其余部分
+# ============================================================
+/.github/
+/arena/
+/art/
+/audio/
+/battle/
+/bomberman/
+/bridge/
+/characters/*
+!/characters/boomerang/
+/community/
+/ctf/
+/diplomacy/
+/docs/
+/land/
+/soccer/
+/tank/
+/tron/
+/warehouse/
+/README.md
+/README_en.md
+/start.cmd
+/start.py
+/start.sh
+
+# 运行时生成的文件（通用）
 __pycache__/
 *.pyc
 .pytest_cache/
@@ -14,7 +41,7 @@ rerun/
 *.pdb
 *.ilk
 workspace/replays/
-# 本地放编译器（w64devkit）的目录，见顶层 README
+# 本地放编译器（w64devkit）的目录
 tools/
 
 # 系统和编辑器
@@ -24,55 +51,12 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
-
-# 第 4 集外交：运行时生成的对局目录含令牌和复制来的登录凭据，切勿提交
-diplomacy/referee/管理员/
-diplomacy/referee/.venv/
-codex_home/
-auth.json
-connection.json
 .venv/
-diplomacy/games/*/回放.html
-diplomacy/games/*/承诺核对.json
 
-# 第 5 集仓储调度：选手包和各轮包里的 tools/ 是比赛材料，不是上面那个放编译器的 tools/
-!warehouse/**/tools/
-# 顶层 art/ 的出图脚本也不是放编译器的 tools/
-!art/tools/
-
-# 社区投稿自测的产物（community/check.py）
-community/.runs/
-community/.cache/
-
-# 第 6 集坦克大战：本地工具的版本存档和回放、复现正式赛时生成的赛事目录
-tank/workspace/history/
-tank/workspace/replays/
-tank/tournament/run-*/
-
-# 第 7 集光轮对战：本地编出来的陪练、本地工具的版本存档和回放
-tron/workspace/bots/*.dll
-tron/workspace/history/
-tron/workspace/replays/
-
-# 第 8 集足球：本地编译、回放重打和沙箱产物
-soccer/workspace/_soccer_box/
-soccer/workspace/bots/*.exe
-soccer/workspace/replays/
-
-# 第 9 集造桥：bridge.py 自动存档、本地提交目录
-bridge/workspace/archive/
-bridge/workspace/submission/
-bridge/archive/
-
-# 渲染器（以后各集的 renderer/）：Blender 自动备份、渲染缓存和出片
+# 渲染器：Blender 自动备份、渲染缓存和出片
 *.blend1
 */renderer/cache/
 */renderer/renders/
-
-# 第 10 集纸上谈兵：Jolt 源码（build_engine.py 下载）、复现目录、解压出来的回放
-battle/engine/third_party/
-battle/rerun/
-battle/replays/*.wrp
 
 # 第 11 集回旋镖大作战：渲染器的缓存和中间帧、裁判的沙箱目录
 boomerang/renderer/work/

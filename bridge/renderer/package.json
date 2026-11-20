@@ -1,8 +1,0 @@
-{
-  "name": "bridge-renderer",
-  "private": true,
-  "license": "MIT",
-  "dependencies": {
-    "three": "0.170.0"
-  }
-}
